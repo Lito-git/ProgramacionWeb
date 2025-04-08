@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    align-self: center;
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: sans-serif;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn1{
+    background-color: #dd33ff;
+}
+
+.btn2{
+    background-color: #7bf409;
+}
+
+.btn1:hover {
+    background-color: #b71ea4;
+}
+
+.btn2:hover {
+    background-color: #7ac816;
+}
+
+.btn1:active, .btn2:active {
+    transform: rotate(360deg) scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+
+.card1 {
+    font-family: sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #fff;
+    margin 50px auto;
+    min-width: 350px;
+    min-height: 350px
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn3 {
+    background-color: #007BFF;
+    font-family: sans-serif;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.btn3:hover {
+  background-color: #0056b3;
+}
