@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="/static/css/Ejercicio1Styles.css">
+</head>
+<body>
+    <div class = "card">
+        <h1>Formulario de Notas</h1>
+        <form method="POST">
+            <label>Nota 1:</label>
+            <input type="number" name="nota1" min="10" max="70"required><br>
+            <label>Nota 2:</label>
+            <input type="number" name="nota2" min="10" max="70" required><br>
+            <label>Nota 3:</label>
+            <input type="number" name="nota3" mini="10" max="70" required><br>
+            <label>Asistencia (%):</label>
+            <input type="number" name="asistencia" min="0" max="100" required><br>
+            <button type="submit">Enviar</button>
+        </form>
+        {% if promNotas %}
+        <div class = "res1">
+            <p>{{ promNotas }}</p>
+            <p>{{ estadoAsig }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

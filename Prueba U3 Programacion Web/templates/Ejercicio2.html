@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="/static/css/Ejercicio2Styles.css">
+</head>
+<body>
+    <div class = "card">
+        <form method="POST">
+            <label>Nombre 1:</label>
+            <input type="text" name="nombre1" pattern="^[A-Za-záéíóúÁÉÍÓÚ\s]+$" required><br>
+            <label>Nombre 2:</label>
+            <input type="text" name="nombre2" pattern="^[A-Za-záéíóúÁÉÍÓÚ\s]+$" required><br>
+            <label>Nombre 3:</label>
+            <input type="text" name="nombre3" pattern="^[A-Za-záéíóúÁÉÍÓÚ\s]+$" required><br>
+            <button type="submit">Enviar</button>
+        </form>
+        {% if resNom %}
+        <div class = "res2">
+            <p>El nombre con mayor cantidad de caracteres es: {{ resNom }}</p>
+            <p>El nombre tiene: {{ cantCaracteres }} caracteres</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
